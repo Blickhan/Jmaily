@@ -1,0 +1,5 @@
+One-time Deployment Checklist
+1. Dynamic Port Binding - use process.env.PORT as the port to listen to because Heroku supplies that
+2. Specify Node Environment - add "engines" to package.json
+3. Specify start Script - add "start" to "scripts" section in package.json
+4. Create .gitignore file - file is used to ignore committing files, specifically dependencies
