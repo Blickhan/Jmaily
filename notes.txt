@@ -3,3 +3,23 @@ One-time Deployment Checklist
 2. Specify Node Environment - add "engines" to package.json
 3. Specify start Script - add "start" to "scripts" section in package.json
 4. Create .gitignore file - file is used to ignore committing files, specifically dependencies
+
+First-Time Deploy
+1. Create Heroku account
+2. Commit our codebase to git
+    a. Install git
+    b. git init
+    c. git add .
+    d. git commit -m "initial commit"
+3. Install Heroku CLI and create App
+    a. heroku login
+    b. heroku create
+4. Deploy app with git
+    a. git remote add heroku [heroku .git address from newly created app]
+    b. Push "master" branch to heroku
+        i. git push heroku master
+5. Heroku deploys app
+
+Subsequent Deployments
+1. Commit codebase to git
+2. 
