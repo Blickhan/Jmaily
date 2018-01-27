@@ -16,10 +16,39 @@ First-Time Deploy
     b. heroku create
 4. Deploy app with git
     a. git remote add heroku [heroku .git address from newly created app]
-    b. Push "master" branch to heroku
-        i. git push heroku master
+    b. git push heroku master
 5. Heroku deploys app
+    a. (optional) heroku open
+    b. (optional) heroku logs
 
 Subsequent Deployments
 1. Commit codebase to git
-2. 
+    a. (optional) git status
+    b. git add .
+    c. git commit -m "[commit message]"
+2. Deploy app with git
+    a. git push heroku master
+
+
+
+
+
+
+_____Useful Commands_____
+1. Kill a node process on Windows
+    a. taskkill /im node.exe /F
+2. Create new git repo
+    a. git init
+3. View project changes that haven't been added to commit
+    a. git status
+4. Commit codebase to git
+    a. git add .
+    b. git commit -m "[commit message]"
+5. Create remote git address with heroku alias
+    a. git remote add heroku [heroku app .git address]
+6. Deploy Heroku app with git by pushing master branch to heroku remote
+    a. git push heroku master
+7. View Heroku logs
+    a. heroku logs
+8. Open Heroku webapp  
+    a. heroku open
