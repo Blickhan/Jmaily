@@ -25,17 +25,19 @@ class Header extends Component {
         console.log(this.props.auth)
         return (
             <nav className="blue-grey darken-4">
-                <div className="nav-wrapper">
-                    <Link 
-                        to={this.props.auth ? '/surveys' : '/'} 
-                        className="left brand-logo"
-                        style={{ marginLeft:'10px' }}
-                    >
-                        Jmaily
-                    </Link>
-                    <ul className="right">
-                        {this.renderContent()}
-                    </ul>
+                <div className="container">  
+                    <div className="nav-wrapper">
+                        <Link 
+                            to={this.props.auth ? '/surveys' : '/'} 
+                            className="left brand-logo"
+                            style={{ marginLeft:'10px' }}
+                        >
+                            Jmaily
+                        </Link>
+                        <ul className="right">
+                            {this.renderContent()}
+                        </ul>
+                    </div>
                 </div>
             </nav>
         );
